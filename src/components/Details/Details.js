@@ -27,10 +27,10 @@ const Details = () => {
         </div>
         <h2 className='text-2xl font-semibold'>Add A Brake</h2>
         <div className="flex justify-around  my-7 bg-slate-200 rounded-lg py-5 text-lg font-semibold ">
-            <button className='bg-white rounded-full p-4'>10s</button>
-            <button className='bg-white rounded-full p-4'>20s</button>
-            <button className='bg-white rounded-full p-4'>30s</button>
-            <button className='bg-white rounded-full p-4'>40s</button>
+            <button className='bg-white rounded-full p-4'><span>10</span>s</button>
+            <button className='bg-white rounded-full p-4'><span>20</span>s</button>
+            <button className='bg-white rounded-full p-4'><span>30</span>s</button>
+            <button className='bg-white rounded-full p-4'><span>40</span>s</button>
             
         </div>
         <h2 className='text-2xl font-semibold'>Exercise Details</h2>
