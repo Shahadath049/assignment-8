@@ -4,17 +4,17 @@ import React from 'react';
 const Task = (props) => {
     const {name,img,age,time,text}= props.task;
     return (
-        <div className="w-full  rounded-lg shadow-md lg:max-w-sm p-2 ">
+        <div className="w-full  rounded-lg shadow-md lg:max-w-sm p-2 bg-white ">
         <img
             className=" object-cover w-full  h-30 rounded-lg"
             src={img}
             alt="image"
         />
         <div className="p-4">
-            <h4 className="text-xl font-semibold tracking-tight text-blue-600">
+            <h4 className="text-xl font-semibold tracking-tight text-blue-600 mb-2">
                 {name}
             </h4>
-            <p className="mb-2 leading-normal">
+            <p className="mb-2 text-gray-500">
                {text}
             </p>
             <h5 className='py-1'>For Age : <span className='font-semibold'>{age}</span></h5>

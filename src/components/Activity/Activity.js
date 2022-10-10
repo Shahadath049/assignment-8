@@ -23,7 +23,7 @@ const Activity = () => {
                 <h1 className=' text-3xl font-bold text-indigo-500 '><FontAwesomeIcon icon={faDumbbell} /> ULTRA-ACTIVE-CLUB</h1>
 
                 <div>
-                        <h3 className='mt-10 text-2xl font-semibold'>Select Today's exercise</h3>
+                        <h3 className='my-10 text-2xl font-semibold'>Select Today's exercise</h3>
                        <div className='grid grid-cols-3 gap-3'>
                             {
                                     tasks.map(task=><Task
