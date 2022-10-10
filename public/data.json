@@ -3,6 +3,7 @@
     {
       "id": "63431c38a848d3690d0704ce",
       "time": 22,
+      "text": "Weight lifting brings more benefits than just stronger muscles and a toned body. Adding strength training to your workouts is a great way to improve your overall fitness.",
       "img": "https://static.vecteezy.com/system/resources/previews/007/767/468/original/single-continuous-line-drawing-of-young-strong-weightlifter-man-preparing-for-barbell-workout-in-gym-weight-lifting-training-concept-trendy-one-line-draw-graphic-design-illustration-vector.jpg",
       "age": "25-37",
       "name": "Lifting weights"
@@ -10,13 +11,15 @@
     {
       "id": "63431c381c8b275691752434",
       "time": 37,
+      "text": "The push-up is a staple upper body movement in the training programs of athletes, recreational gym-goers, bodybuilders, and those recovering from certain injuries.",
       "img": "https://static.vecteezy.com/system/resources/previews/007/767/630/non_2x/one-continuous-line-drawing-of-young-sporty-man-working-out-push-up-in-fitness-gym-club-center-healthy-fitness-sport-concept-dynamic-single-line-draw-design-graphic-illustration-vector.jpg",
       "age": "25-37",
-      "name": "Lifting your body weight"
+      "name": "Push Ups"
     },
     {
       "id": "63431c3881bed4c60beacf9b",
       "time": 27,
+      "text": "An exercise that’s key for building upper body strength. To perform this exercise properly, you’ll need to use an Olympic bar or dumbbells for better muscle recruitment.",
       "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8eap4LXvsgvQ_e2MyfzqlsoYj8gjh2Z-K0vTyrrArASfLRDWTubsf3i17DStuufBvws4&usqp=CAU",
       "age": "25-37",
       "name": "Bench Press"
@@ -24,6 +27,7 @@
     {
       "id": "63431c38b077a90fd3c17b1c",
       "time": 23,
+      "text": "This is  exercise for your core that can be done in loads of different ways, depending on what you want to achieve. You can also perform a plank at high and low intensity levels.",
       "img": "https://i.pinimg.com/564x/2e/c4/db/2ec4db4c759b7aa3e2deeb7f10ac30a0.jpg",
       "age": "25-37",
       "name": "Plank"
@@ -31,6 +35,7 @@
     {
       "id": "63431c380a536721ce6b5556",
       "time": 29,
+      "text": "The unstable surface will help develop core strength, balance and strengthen the ankle stabilisers, which can help prevent common ankle injuries.Place it on  the flat side.",
       "img": "https://i.pinimg.com/originals/09/47/73/094773919b030a98f1da241960ae1c4d.png",
       "age": "25-37",
       "name": "Bosu Squats"
@@ -38,7 +43,8 @@
     {
       "id": "63431c381fa79532ced86df2",
       "time": 22,
-      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwGl0ksGsQafW-9wiraqNferag1Y4Rsyhh0w&usqp=CAU",
+      "text": " A foam roller both before and after exercise helps massage away knots and tightness in your muscles, which in turn helps prevent injuries and de-stresses the body",
+      "img": "https://i.pinimg.com/564x/1e/48/6f/1e486fcdc2a2f415845574b7084b4509--foam-rollers-exercise.jpg",
       "age": "25-37",
       "name": "Foam Roller"
     }
