@@ -15,7 +15,9 @@ const Activity = () => {
         .then(data=> setTasks(data))
     },[])
 
-
+    const handleAddToDetails =() =>{
+        console.log('clicked')
+    }
     return (
         <div className='container mx-auto  grid grid-cols-8 gap-5'>
             <div className='col-span-6 px-20 mt-20 '>
@@ -29,6 +31,7 @@ const Activity = () => {
                                     tasks.map(task=><Task
                                         key={task.id}
                                         task={task}
+                                        handleAddToDetails={handleAddToDetails}
                                     ></Task>)
                                 }
                        </div>
