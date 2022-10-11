@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Details = () => {
+const Details = ({time}) => {
     return (
 
     <div className='px-1'>
@@ -38,7 +38,7 @@ const Details = () => {
 
     
                 <span className='text-lg font-bold'>Exercise time </span>
-                <p className='text-gray-400'><span>0</span> seconds</p>
+                <p className='text-gray-400'><span>{time}</span> seconds</p>
             
         </div>
         <div className="flex justify-between  my-7 bg-slate-200 rounded-lg p-5 text-lg font-semibold ">

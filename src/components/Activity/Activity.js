@@ -8,6 +8,7 @@ import Details from '../Details/Details';
 
 const Activity = () => {
     const [tasks,setTasks]= useState([]);
+    const [time,setTime]= useState(0);
 
     useEffect(()=>{
         fetch('data.json')
@@ -16,10 +17,13 @@ const Activity = () => {
     },[])
 
     const handleAddToDetails =(task) =>{
-        console.log(task)
+        console.log(task);
+        const newTime = time + task.time;
+        setTime(newTime);
+        console.log(newTime)
     }
     return (
-        <div className='container mx-auto  grid grid-cols-8 gap-5'>
+        <div className='container mx-auto  grid grid-cols-8 gap-5 '>
             <div className='col-span-6 px-20 mt-20 '>
 
                 <h1 className=' text-3xl font-bold text-indigo-500 '><FontAwesomeIcon icon={faDumbbell} /> ULTRA-ACTIVE-CLUB</h1>
@@ -40,9 +44,11 @@ const Activity = () => {
 
             </div>
 
-            <div className='bg-gray-100 col-span-2 p-4'>
+            <div className='bg-gray-100 col-span-2 p-4 '>
                 
-                <Details></Details>
+                <Details
+                    time ={time}
+                ></Details>
              
             </div>
 
