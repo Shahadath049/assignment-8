@@ -8,7 +8,15 @@ import Details from '../Details/Details';
 
 const Activity = () => {
     const [tasks,setTasks]= useState([]);
+    console.log(tasks)
+    // this state is to set time 
     const [time,setTime]= useState(0);
+
+
+    
+    // this state is to send the whole card as props in details 
+    const [product,setProduct]= useState([]);
+    
 
     useEffect(()=>{
         fetch('data.json')
@@ -17,10 +25,16 @@ const Activity = () => {
     },[])
 
     const handleAddToDetails =(task) =>{
-        console.log(task);
+        
         const newTime = time + task.time;
         setTime(newTime);
-        console.log(newTime)
+
+        const newProduct = task;
+        setProduct(newProduct);
+        
+        
+        
+        
     }
     return (
         <div className='container mx-auto  grid grid-cols-8 gap-5 '>
@@ -48,6 +62,7 @@ const Activity = () => {
                 
                 <Details
                     time ={time}
+                    product={product}
                 ></Details>
              
             </div>
