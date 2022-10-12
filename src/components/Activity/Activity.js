@@ -13,7 +13,7 @@ const Activity = () => {
     const [time,setTime]= useState(0);
 
 
-    
+
     // this state is to send the whole card as props in details 
     const [product,setProduct]= useState([]);
     
@@ -37,14 +37,15 @@ const Activity = () => {
         
     }
     return (
-        <div className='container mx-auto  grid grid-cols-8 gap-5 '>
-            <div className='col-span-6 px-20 mt-20 '>
+        <div className='container mx-auto  grid grid-cols-8  '>
+            <div className='col-span-full lg:col-span-6 px-20 mt-20 '>
 
                 <h1 className=' text-3xl font-bold text-indigo-500 '><FontAwesomeIcon icon={faDumbbell} /> ULTRA-ACTIVE-CLUB</h1>
 
                 <div>
                         <h3 className='my-10 text-2xl font-semibold'>Select Today's exercise</h3>
-                       <div className='grid grid-cols-3 gap-3'>
+                       <div className='grid sm:grid-cols-1
+                       md:grid-cols-2 lg:grid-cols-3  gap-3'>
                             {
                                     tasks.map(task=><Task
                                         key={task.id}
@@ -58,7 +59,7 @@ const Activity = () => {
 
             </div>
 
-            <div className='bg-gray-100 col-span-2 p-4 '>
+            <div className='bg-gray-100 col-span-8 lg:col-span-2 p-4 '>
                 
                 <Details
                     time ={time}

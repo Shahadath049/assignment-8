@@ -1,4 +1,8 @@
 import React, { useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
 
 const Details = (props) => {
     
@@ -11,6 +15,9 @@ const Details = (props) => {
             
            console.log('clicked')
            setNumber(value);
+    }
+    const diffToast = ()=>{
+        toast("Wow so easy!")
     }
 
     return (
@@ -60,14 +67,14 @@ const Details = (props) => {
                 <p className='text-gray-400'><span>{number}</span> seconds</p>
             
         </div>
-        <button className="w-full px-4 py-5 text-2xl text-blue-100 bg-blue-500 rounded shadow">
+        <button onClick={diffToast} className="w-full px-4 py-5 text-2xl text-blue-100 bg-blue-500 rounded shadow">
                 Activity Completed
             </button>
-           
+            
 
-
-
+<ToastContainer />
     </div>
+    
 
     );
 };
