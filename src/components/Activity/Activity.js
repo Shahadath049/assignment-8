@@ -40,7 +40,7 @@ const Activity = () => {
         <div className='container mx-auto  grid grid-cols-8  '>
             <div className='col-span-full lg:col-span-6 px-20 mt-20 '>
 
-                <h1 className=' text-3xl font-bold text-indigo-500 '><FontAwesomeIcon icon={faDumbbell} /> ULTRA-ACTIVE-CLUB</h1>
+                <h1 className=' text-5xl font-bold text-indigo-500 '><FontAwesomeIcon icon={faDumbbell} /> ULTRA-ACTIVE-CLUB</h1>
 
                 <div>
                         <h3 className='my-10 text-2xl font-semibold'>Select Today's exercise</h3>
