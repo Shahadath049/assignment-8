@@ -1,28 +1,46 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+ 
 
-
-const Details = (props) => {
+const Details = (props) => {  
     
+    const getLocalItems =()=>{
+     const list =localStorage.getItem('breaks');
+     console.log(list)
+
+     if(list){
+        return JSON.parse(localStorage.getItem('breaks'));
+     }
+     else{
+        return 0
+     }
+}
+ 
     const {time,product}= props
     const {text,age,id}=props.product
 
-    const [number,setNumber]= useState(0);
+    const [number,setNumber]= useState(getLocalItems());
 
     const handleBreak=(value) =>{
             
            console.log('clicked')
            setNumber(value);
     }
+
+    // set to local storage 
+    useEffect(() => {
+        localStorage.setItem('breaks',JSON.stringify(number))
+    },[number]);
+   
     const diffToast = ()=>{
         toast("Wow so easy!")
     }
 
     return (
 
-    <div className='px-1 sticky top-0'>
+    <div className='px-1 sticky top-0 md:mx-2'>
         <div className="flex items-center justify-around space-x-4 ">
         <img className="w-20 h-20 rounded-full" src="https://img.freepik.com/premium-vector/person-avatar-design_24877-38137.jpg?w=2000" alt=""/>
             <div className="font-medium dark:text-green-400">

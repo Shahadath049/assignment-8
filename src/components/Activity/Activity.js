@@ -38,7 +38,7 @@ const Activity = () => {
     }
     return (
         <div className='container mx-auto  grid grid-cols-8  '>
-            <div className='col-span-full lg:col-span-6 px-20 mt-20 '>
+            <div className='col-span-full lg:col-span-6 lg:px-20 px-5 mt-20 '>
 
                 <h1 className=' text-5xl font-bold text-indigo-500 '><FontAwesomeIcon icon={faDumbbell} /> ULTRA-ACTIVE-CLUB</h1>
 
@@ -59,7 +59,7 @@ const Activity = () => {
 
             </div>
 
-            <div className='bg-gray-100 col-span-8 lg:col-span-2 p-4 '>
+            <div className='bg-gray-100 col-span-8 lg:col-span-2 p-4 lg:mt-0 md:mt-10 mt-5 '>
                 
                 <Details
                     time ={time}
